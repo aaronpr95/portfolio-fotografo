@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-email-server",
+  "version": "0.0.1",
+  "description": "SMTP Email server for portfolio contact form",
+  "main": "server-prod.js",
+  "scripts": {
+    "start": "node server-prod.js",
+    "dev": "nodemon server-dev.js",
+    "prod": "nodemon server-prod.js",
+    "test": "node server-dev.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

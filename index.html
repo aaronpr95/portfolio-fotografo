@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/camera.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio profesional de fotografía - Capturando momentos únicos" />
+    <title>Portfolio Fotográfico</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <h1>a a r o n | Fotógrafo</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-content">
+          <div class="hero-top">
+            <h2 class="hero-title">a a r o n </h2>
+            <p class="hero-subtitle">Fotógrafo · Capturando momentos</p>
+          </div>
+          <div class="hero-bottom">
+            <div class="cta-arrow" role="button" tabindex="0">
+              <span class="arrow-text">Galería</span>
+              <div class="arrow-symbol">></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre-mi" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Sobre Mí</h2>
+              <p>Soy aaron, un fotógrafo apasionado con años de dedicación capturando momentos únicos. Mi camino en la fotografía ha sido un constante proceso de exploración y perfeccionamiento de mi visión artística.</p>
+              <p>Mi enfoque se centra en la autenticidad y la conexión emocional, buscando siempre contar historias a través de cada imagen. La fotografía es mi forma de ver y compartir el mundo.</p>
+            </div>
+            <div class="about-image">
+              <img src="/images/portrait.jpg" alt="Retrato del fotógrafo" class="portrait">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="gallery">
+        <div class="container">
+          <h2>Mi Galería</h2>
+          <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="retratos">Retratos</button>
+            <button class="filter-btn" data-filter="eventos">Eventos</button>
+            <button class="filter-btn" data-filter="paisajes">Paisajes</button>
+          </div>
+          <div class="gallery-grid" id="galleryGrid">
+            <!-- Las imágenes se cargarán dinámicamente con TypeScript -->
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="services">
+        <div class="container">
+          <h2>Mis Servicios</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">📸</div>
+              <h3>Sesiones de Retratos</h3>
+              <p>Retratos profesionales individuales y familiares en estudio o locación.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🎉</div>
+              <h3>Fotografía de Eventos</h3>
+              <p>Cobertura completa de bodas, quinceañeras y eventos corporativos.</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🌄</div>
+              <h3>Fotografía de Paisajes</h3>
+              <p>Captura de la belleza natural en paisajes y arquitectura.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact">
+        <div class="container">
+          <h2>Contacto</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>¿Listo para capturar momentos especiales?</h3>
+              <p>Contáctame para discutir tu próximo proyecto fotográfico.</p>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <span class="icon">📧</span>
+                  <span>aaronp.morales@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                  <span class="icon">📱</span>
+                  <span>Contactar</span>
+                </div>
+                <div class="contact-item">
+                  <span class="icon">📍</span>
+                  <span>Valladolid, España</span>
+                  <span>Desplazamientos disponibles</span>
+                </div>
+              </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Mi Portfolio Fotográfico. Todos los derechos reservados.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-image" src="" alt="">
+        <div class="lightbox-nav">
+          <button class="nav-btn prev-btn">‹</button>
+          <button class="nav-btn next-btn">›</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
