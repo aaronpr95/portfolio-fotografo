@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 // Nodemailer configuration with OAuth2
 const createTransporter = () => {
