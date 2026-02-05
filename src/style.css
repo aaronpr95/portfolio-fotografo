@@ -540,14 +540,30 @@ body {
 }
 
 .social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   color: white;
   text-decoration: none;
   font-weight: var(--font-weight-medium);
-  transition: color var(--transition-fast);
+  transition: all var(--transition-fast);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+  transition: transform var(--transition-fast);
 }
 
 .social-link:hover {
   color: var(--secondary-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover svg {
+  transform: scale(1.1);
 }
 
 /* Lightbox */
@@ -747,6 +763,23 @@ body {
   .footer .container {
     flex-direction: column;
     text-align: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .social-link span {
+    display: none;
+  }
+  
+  .social-link {
+    padding: 0.75rem;
+  }
+  
+  .social-link svg {
+    width: 24px;
+    height: 24px;
   }
 }
 
