@@ -193,10 +193,7 @@ Add these variables in **Vercel Dashboard** → **Settings** → **Environment V
 
 ## 📱 Feature Showcase
 
-<div align="center">
-
 ### 🖼️ **Interactive Gallery**
-![Gallery Demo](https://via.placeholder.com/600x300/2c3e50/ffffff?text=Interactive+Gallery+Demo)
 
 **✨ Gallery Features:**
 - 🎯 Category filtering system
@@ -205,14 +202,9 @@ Add these variables in **Vercel Dashboard** → **Settings** → **Environment V
 - 📱 Touch gestures support
 - 🎨 Smooth CSS animations
 
-</div>
-
 ---
 
-<div align="center">
-
 ### 💌 **Professional Contact System**
-![Contact Demo](https://via.placeholder.com/600x300/3498db/ffffff?text=Contact+Form+Demo)
 
 **📧 Email Features:**
 - ✅ Real Gmail integration via OAuth2
@@ -221,14 +213,9 @@ Add these variables in **Vercel Dashboard** → **Settings** → **Environment V
 - 🎨 Professional HTML templates
 - 📊 Success/error notifications
 
-</div>
-
 ---
 
-<div align="center">
-
 ### 📱 **Responsive Design**
-![Responsive Demo](https://via.placeholder.com/600x300/e74c3c/ffffff?text=Mobile+Responsive+Design)
 
 **🎯 Design Features:**
 - 📱 Mobile-first approach
@@ -236,8 +223,6 @@ Add these variables in **Vercel Dashboard** → **Settings** → **Environment V
 - 🌊 Smooth scrolling experience
 - 🎯 Active section indicators
 - ⚡ Optimized performance
-
-</div>
 
 ## 🎨 Customization Guide
 
