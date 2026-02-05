@@ -2,12 +2,8 @@
 
 > A modern, full-stack TypeScript portfolio with real email integration and professional deployment capabilities.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/aaronpr95/portfolio-fotografo)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-
-## ✨ Live Demo
-🌐 **[View Portfolio](https://portfolio-fotografo-aaronpr95.vercel.app)** (Coming Soon)
 
 ## 🚀 Features
 
@@ -40,39 +36,31 @@
 | **Deployment** | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) ![Serverless](https://img.shields.io/badge/Serverless-FD5750?style=flat&logo=serverless&logoColor=white) |
 | **Backend** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white) ![Nodemailer](https://img.shields.io/badge/Nodemailer-0F1419?style=flat&logo=nodemailer&logoColor=white) |
 | **Email Service** | ![Gmail API](https://img.shields.io/badge/Gmail_API-D14836?style=flat&logo=gmail&logoColor=white) ![OAuth2](https://img.shields.io/badge/OAuth2-4285F4?style=flat&logo=google&logoColor=white) |
-| **Development** | ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat&logo=eslint&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white) |
 
 </div>
-
-### 🏗️ **Architecture Highlights**
-- **Component-Based Architecture** - Modular, reusable TypeScript classes
-- **Serverless Functions** - Zero-config backend with Vercel
-- **OAuth2 Integration** - Secure, professional email authentication
-- **Mobile-First Design** - Optimized for all screen sizes
 
 ## 📁 Project Structure
 
 ```
 portfolio/
-├── public/                 # Static assets
-│   └── images/            # Portfolio images
-├── src/
-│   ├── components/         # TypeScript components
-│   │   ├── Gallery.ts      # Interactive image gallery
-│   │   ├── Navigation.ts   # Mobile navigation
-│   │   ├── ContactForm.ts  # Form with validation
-│   │   └── Lightbox.ts     # Image viewer modal
-│   ├── main.ts            # Main application entry
-│   └── style.css          # CSS styles and animations
 ├── api/
-│   └── send-email.js      # Vercel serverless function
-├── server/                # Local development server
-│   ├── server-prod.js     # Production OAuth2 email server
-│   └── server-dev.js      # Development testing server
-├── index.html             # Main HTML page
-├── package.json           # Project dependencies
-├── tsconfig.json          # TypeScript configuration
-└── vercel.json           # Vercel deployment config
+│   └── send-email.mjs     # Vercel serverless function
+├── public/
+│   └── images/            # Portfolio images
+├── server/                # Local development (optional)
+│   ├── server-prod.js     # OAuth2 email server
+│   └── server-dev.js      # Dev testing server
+├── src/
+│   ├── components/        # TypeScript components
+│   │   ├── ContactForm.ts
+│   │   ├── Gallery.ts
+│   │   ├── Lightbox.ts
+│   │   └── Navigation.ts
+│   ├── main.ts           # App entry point
+│   └── style.css         # Styles
+├── index.html
+├── package.json
+└── vercel.json           # Deployment config
 ```
 
 ## 🚀 Quick Start
@@ -81,9 +69,6 @@ portfolio/
 - **Node.js** 18+ 
 - **Gmail Account** (for email functionality)
 - **Vercel Account** (for deployment)
-
-### ⚡ One-Click Deploy
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/aaronpr95/portfolio-fotografo)
 
 ### 💻 Local Development
 
@@ -118,23 +103,6 @@ npm run server
 | `npm run preview` | Preview production build locally |
 | `npm run lint` | Check code quality with ESLint |
 | `npm run lint:fix` | Auto-fix ESLint issues |
-| `npm run dev:all` | Start both frontend and email server |
-
-### 📧 Email Server Commands
-
-| Command | Description |
-|---------|-------------|
-| `cd server && npm run prod` | Start production OAuth2 email server (port 3001) |
-| `cd server && npm run dev` | Start development testing server |
-| `cd server && npm run test` | Run development server (single execution) |
-| `cd server && npm install` | Install email server dependencies |
-
-### 🧪 Email Testing
-
-| URL | Description |
-|-----|-------------|
-| `http://localhost:3001/test` | Test email server endpoint |
-| `http://localhost:3001/send-email` | Email API endpoint (POST) |
 
 ## 📧 Email Setup Guide
 
@@ -279,31 +247,6 @@ const sampleImages: ImageData[] = [
 - CORS configuration
 - Environment variable protection
 
-## 🚀 Roadmap & Extensions
-
-<details>
-<summary><strong>🔮 Future Enhancements</strong> (Click to expand)</summary>
-
-### 🎯 **Phase 1: Core Improvements**
-- [ ] **Image Optimization** - WebP format, compression
-- [ ] **SEO Enhancement** - Meta tags, structured data
-- [ ] **Performance** - Lighthouse score optimization
-- [ ] **Analytics** - Google Analytics integration
-
-### 🎯 **Phase 2: Advanced Features**  
-- [ ] **PWA Support** - Offline functionality, app-like experience
-- [ ] **Dark Mode** - Theme switcher with system preference
-- [ ] **Multi-language** - i18n support for global reach
-- [ ] **Admin Panel** - Content management system
-
-### 🎯 **Phase 3: Professional Tools**
-- [ ] **Database Integration** - Dynamic image management
-- [ ] **User Authentication** - Client portal access
-- [ ] **Booking System** - Appointment scheduling
-- [ ] **Payment Gateway** - Online payment processing
-
-</details>
-
 ---
 
 ## 📊 Performance & Stats
@@ -321,18 +264,6 @@ const sampleImages: ImageData[] = [
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. 🍴 **Fork** the repository
-2. 🌟 **Create** your feature branch (`git checkout -b feature/amazing-feature`)
-3. 💾 **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. 📤 **Push** to the branch (`git push origin feature/amazing-feature`)
-5. 🔄 **Open** a Pull Request
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
@@ -341,20 +272,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## 💝 Acknowledgments
-
-- **Vite Team** - For the amazing build tool
-- **TypeScript Team** - For type-safe JavaScript
-- **Vercel** - For seamless deployment
-- **Photography Community** - For inspiration and feedback
-
----
-
 <div align="center">
 
 **Built with ❤️ by [aaron](https://github.com/aaronpr95)**
-
-[![GitHub followers](https://img.shields.io/github/followers/aaronpr95?style=social)](https://github.com/aaronpr95)
 
 **⭐ Star this repo if you found it helpful!**
 
