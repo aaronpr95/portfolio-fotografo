@@ -18,6 +18,7 @@
     "@typescript-eslint/parser": "^8.47.0",
     "eslint": "^9.39.1",
     "googleapis": "^171.1.0",
+    "sharp": "^0.34.5",
     "typescript": "~5.9.3",
     "vite": "npm:rolldown-vite@7.1.14"
   },
